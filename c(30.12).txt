@@ -1,0 +1,88 @@
+Magic number(doubt)
+
+ int a;
+    scanf("%d",&a);
+    int sum=0;
+    int temp=a;
+    //sum
+    while(a!=0)
+    {
+        sum+=(a%10);
+        a/=10;;
+    }
+    int rev=0;
+    while(temp!=0)
+    {
+        rev=rev*10+(temp%10);
+        temp/=10;
+    }
+    if(sum*temp==a)
+    {
+        printf("Magic number");
+    }
+    else
+    {
+        printf("Not");
+    }
+    return 0;
+
+// increment
+/*
+
+for(r=1;r<=n;printf("\n"),r+=1)
+{
+    for(c=1;c<=r;c+=1)
+    {
+        printf(" * ");
+    }
+}
+*/
+// decrement
+
+/*
+for(r=n;r>=1;printf("\n"),r-=1)
+{
+    for(c=1;c<=r;c+=1)
+    {
+        printf(" * ");
+    }
+}
+*/
+//incre to decre
+
+
+/*
+for(r=1;r<n;printf("\n"),r+=1)
+{
+    for(c=1;c<=r;c+=1)
+    {
+        printf(" * ");
+    }
+}
+for(r=n;r>=1;printf("\n"),r-=1)
+{
+    for(c=1;c<=r;c+=1)
+    {
+        printf(" * ");
+    }
+}
+*/
+
+//decre to incre
+
+/*
+for(r=n;r>1;printf("\n"),r-=1)
+{
+    for(c=1;c<=r;c+=1)
+    {
+        printf(" * ");
+    }
+}
+for(r=1;r<=n;printf("\n"),r+=1)
+{
+    for(c=1;c<=r;c+=1)
+    {
+        printf(" * ");
+    }
+}
+*/
